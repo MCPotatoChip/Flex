@@ -11,9 +11,10 @@ body{
     width: 80%;
     margin: auto;
     text-align: center;
+    
 }
 .title{
-    margin-bottom: 25px ;
+    margin: 25px 0 ;
 }
 .title h2 {
     font-size: 30px;
@@ -34,9 +35,13 @@ h2,h3{
 p{
     color: gray;
 }
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .item{
-    width: 24%;
-    display: inline-block;
+    padding-bottom: 20px;
     margin-bottom: 20px;
     background-color: white;
     border-radius: 8px;
@@ -45,6 +50,7 @@ p{
 }
 .img-div{
     position: relative;
+    display:flex;
 }
 .item .img-div img{
     width:100%;
@@ -70,4 +76,30 @@ a{
 }
 a:hover{
     color: aqua;
+}
+@media screen and (min-width:1200px) {
+    .item{
+        width: 24%;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .item{
+        width: 24%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .item{
+        width: 32%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:768px) {
+    .item{
+        width: 99%;
+    }
+}
+@media screen and (max-width:600px) {
+    .item{
+        width: 99%;
+    }
 }
